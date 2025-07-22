@@ -16,20 +16,19 @@ style: |
 <!-- if html tags appear then: https://github.com/marp-team/marpit/issues/178#issuecomment-511106762 -->
 
 
-# Title of the talk
+# `git` and GitHub
 
-First Author¹, Second Author²
+Sam Cunliffe and Matthew Scroggs
 
-¹Centre for Advanced Research Computing, UCL.
-²Department of Collaborators, UCL.
+Centre for Advanced Research Computing, UCL.
 
-Conference, Location. 202Y-MM-DD.
+CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-11-24.
 
 ---
 
 <!--
 paginate: true
-footer: F. Author, 202Y-MM-DD.
+footer: `git` and GitHub, 2025-11-24.
 -->
 
 # A basic slide with bullets
