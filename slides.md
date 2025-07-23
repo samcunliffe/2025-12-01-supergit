@@ -1,22 +1,13 @@
 ---
 marp: true
 theme: default
-style: |
-  .ccolumns {
-    display: grid;
-    grid-template-columns: 50% auto;
-    gap: 1rem;
-  }
 ---
 
 ![bg fit](assets/ucl-banner.png)
 
 <br/><br/><br/><!-- aesthetic vspace so the title isn't too close to the UCL banner -->
 
-<!-- if html tags appear then: https://github.com/marp-team/marpit/issues/178#issuecomment-511106762 -->
-
-
-# `git` and GitHub
+# `git` gives you superpowers
 
 Sam Cunliffe and Matthew Scroggs
 
@@ -28,31 +19,68 @@ CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-11-24.
 
 <!--
 paginate: true
-footer: `git` and GitHub, 2025-11-24.
+footer: `git` superpowers, 2025-11-24.
 -->
 
-# A basic slide with bullets
+# Our plan
 
-- First point.
-- Second point.
-
----
-
-# Slide with bullets that appear
-
-* I appear...
-* Then I appear...
-* Then **I** appear 🎉!
+- A tour of the most useful features.
+- Parallel universe management.
+- Time travelling.
+- Saving your life.
+- Making friends.
+- This is not really an introduction to `git` (sorry!)
 
 ---
 
-# Centered on a slide
+# Our plan
 
-<center>
+- A tour of the most useful features.
+- Branching, rebasing.
+- Log, checkout.
+- Revert, soft reset.
+- Collaboration, pull requests, bug reports, ettiquette.
+- This is not really an introduction to `git` (sorry!)
 
-Example of something centred.
+---
 
-</center> 
+# There are lots of very good "getting started" resources
+
+Some of our favourites...
+
+- [GitTutor]()
+- [The Carpentries]()
+
+This morning is not that.
+
+---
+
+<!--
+_footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Peter Adams. CC BY-NC-SA.
+-->
+
+![bg left:40%](assets/linus.jpg)
+
+<!-- prettier-ignore-start -->
+
+* This is Linus.
+* He started the Linux kernel project.
+* He started the `git` project.
+* ...because he needed something for collaborating on the kernel.
+* The software project `git` was kept in `git` from quite early on.
+* _Remember the human_ on the internet.
+
+<!-- prettier-ignore-end -->
+
+---
+
+# Demo: let's look at `git`'s history in `git`.
+
+---
+
+- First interesting thing: `git` allows you to time travel.
+- You can go back, forwards, to the beginning of a project.
+- It's one of those things you learn but you don't appreaciate until you need it.
 
 ---
 
@@ -108,7 +136,6 @@ int butWillWriteCppIfNeeded()
 $$
 \widehat{f}(\xi) = \int_{-\infty}^{\infty} f(x)\ e^{-i 2\pi \xi x}\,dx.
 $$
-
 
 ---
 
