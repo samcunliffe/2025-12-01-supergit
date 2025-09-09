@@ -13,13 +13,15 @@ Sam Cunliffe and Matthew Scroggs
 
 Centre for Advanced Research Computing, UCL.
 
-CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-11-24.
+CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-12-01.
+
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" height="31" />
 
 ---
 
 <!--
 paginate: true
-footer: `git` superpowers, 2025-11-24.
+footer: `git` superpowers, 2025-12-01.
 -->
 
 # Our plan
