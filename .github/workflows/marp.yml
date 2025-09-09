@@ -3,15 +3,15 @@ concurrency: marp-to-pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Ensure build dir exists
         run: mkdir -p build
@@ -26,24 +26,8 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: Deploy preview
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          source-dir: ./build/
-          preview-branch: gh-pages
-          umbrella-dir: pr-preview
-
-      - name: Deploy production
-        if: ${{ github.event_name == 'push' }}
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: ./build/
-          clean-exclude: pr-preview/
-
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./build
 
@@ -58,7 +42,6 @@ jobs:
       pages: write
       id-token: write
     steps:
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
