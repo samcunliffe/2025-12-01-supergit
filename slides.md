@@ -25,10 +25,10 @@ footer: `git` superpowers, 2025-11-24.
 # Our plan
 
 - A tour of the most useful features.
-- Parallel universe management.
-- Time travelling.
-- Saving your life.
-- Making friends.
+  - Branching, rebasing.
+  - Log, checkout.
+  - Revert, soft reset.
+  - Collaboration, pull requests, bug reports, ettiquette.
 - This is not really an introduction to `git` (sorry!)
 
 ---
@@ -36,27 +36,16 @@ footer: `git` superpowers, 2025-11-24.
 # Our plan
 
 - A tour of the most useful features.
-- Branching, rebasing.
-- Log, checkout.
-- Revert, soft reset.
-- Collaboration, pull requests, bug reports, ettiquette.
+  - Parallel universe management.
+  - Time travelling.
+  - Saving cats from a burning building.
+  - Superhero teamup.
 - This is not really an introduction to `git` (sorry!)
 
 ---
 
-# There are lots of very good "getting started" resources
-
-Some of our favourites...
-
-- [GitTutor]()
-- [The Carpentries]()
-
-This morning is not that.
-
----
-
 <!--
-_footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Peter Adams. CC BY-NC-SA.
+_footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Peter Adams. CC BY-NC-SA 4.0.
 -->
 
 ![bg left:40%](assets/linus.jpg)
@@ -78,13 +67,37 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 ---
 
+<center>
+
+![h:600](assets/git-in-git.png)
+
+</center>
+
+---
+
 - First interesting thing: `git` allows you to time travel.
 - You can go back, forwards, to the beginning of a project.
 - It's one of those things you learn but you don't appreaciate until you need it.
 
 ---
 
+<!--
+_footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott Chacon. CC BY-NC-SA 3.0.
+-->
+
+# "Changes" "Staged" "Committed"
+
+<center>
+
+![h:500](https://git-scm.com/book/en/v2/images/areas.png)
+
+</center>
+
+---
+
 # Split bullet slide
+
+- (Obviously)
 
 <br/>
 <div class="ccolumns">
@@ -150,7 +163,9 @@ $$
 
 ---
 
-# Add appendix slides if needed
+# Further reading
 
-- Delete all of this if you don't need it.
-- (Obviously)
+|                                                      |             |
+| ---------------------------------------------------- | ----------- |
+| [Pro Git](https://git-scm.com/book/en/v2)            | Online book |
+| GitHub's [Git Guides](https://github.com/git-guides) | Website     |
