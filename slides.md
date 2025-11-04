@@ -5,44 +5,55 @@ theme: default
 
 ![bg fit](assets/ucl-banner.png)
 
-<br/><br/><br/><!-- aesthetic vspace so the title isn't too close to the UCL banner -->
+<br/><br/><br/><br/><!-- aesthetic vspace so the title isn't too close to the UCL banner -->
 
 # `git` gives you superpowers
 
-Sam Cunliffe and Matthew Scroggs
+## (+ licensing your software)
 
-Centre for Advanced Research Computing, UCL.
+[@samcunliffe] and [@mscroggs]
 
 CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-12-01.
 
-<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" height="31" />
+![h:31](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
+
+[@mscroggs]: https://github.com/mscroggs
+[@samcunliffe]: https://github.com/samcunlffe
 
 ---
 
 <!--
 paginate: true
-footer: `git` superpowers, 2025-12-01.
+footer: `git` superpowers and licensing, 2025-12-01.
 -->
 
 # Our plan
 
-- A tour of the most useful features.
-  - Branching, rebasing.
-  - Log, checkout.
-  - Revert, soft reset.
-  - Collaboration, pull requests, bug reports, ettiquette.
-- This is not really an introduction to `git` (sorry!)
+<!-- prettier-ignore-start -->
+
+* A tour of the most useful features.
+  * Log, checkout.
+  * Branching, rebasing.
+  * Revert, soft reset.
+  * Collaboration, pull requests, bug reports, ettiquette.
+* This is not really an introduction to `git` (sorry!)
+
+<!-- prettier-ignore-end -->
 
 ---
 
 # Our plan
 
 - A tour of the most useful features.
-  - Parallel universe management.
   - Time travelling.
+  - Parallel universe management.
   - Saving cats from a burning building.
   - Superhero teamup.
 - This is not really an introduction to `git` (sorry!)
+
+---
+
+# Time travelling
 
 ---
 
@@ -77,9 +88,15 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 ---
 
-- First interesting thing: `git` allows you to time travel.
-- You can go back, forwards, to the beginning of a project.
-- It's one of those things you learn but you don't appreaciate until you need it.
+# Parallel universes
+
+---
+
+# Saving cats from burning buildings
+
+---
+
+# Superhero teamup
 
 ---
 
@@ -94,6 +111,16 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 ![h:500](https://git-scm.com/book/en/v2/images/areas.png)
 
 </center>
+
+---
+
+---
+
+<!--
+_footer: Image: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:DC_superhero_emojis.svg) / Di. CC BY-SA 4.0.
+-->
+
+![](assets/superheroes.png)
 
 ---
 
