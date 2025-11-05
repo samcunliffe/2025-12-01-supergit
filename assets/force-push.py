@@ -16,7 +16,7 @@ frequencies = [
     "never",
 ]
 
-votes = [3, 3, 4, 19, 5]
+votes = [3, 3, 3, 21, 5]
 
 error_votes_upper = [sqrt(n + 0.75) for n in votes]
 error_votes_lower = [sqrt(n - 0.25) for n in votes]
