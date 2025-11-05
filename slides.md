@@ -5,7 +5,9 @@ theme: default
 
 ![bg fit](assets/ucl-banner.png)
 
-<br/><br/><br/><br/><!-- aesthetic vspace so the title isn't too close to the UCL banner -->
+![width:7em](assets/ccmi.svg)
+
+<br />
 
 # `git` gives you superpowers
 
@@ -13,9 +15,7 @@ theme: default
 
 [@samcunliffe] and [@mscroggs]
 
-CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-12-01.
-
-![h:31](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
+CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-12-01. ![h:31](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
 
 [@mscroggs]: https://github.com/mscroggs
 [@samcunliffe]: https://github.com/samcunlffe
@@ -24,36 +24,51 @@ CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-12-01.
 
 <!--
 paginate: true
-footer: `git` superpowers and licensing, 2025-12-01.
+footer: `git` superpowers (and licensing). 2025-12-01.
 -->
 
-# Our plan
+# Our plan for this morning
 
-<!-- prettier-ignore-start -->
-
-* A tour of the most useful features.
-  * Log, checkout.
-  * Branching, rebasing.
-  * Revert, soft reset.
-  * Collaboration, pull requests, bug reports, ettiquette.
-* This is not really an introduction to `git` (sorry!)
-
-<!-- prettier-ignore-end -->
-
----
-
-# Our plan
-
-- A tour of the most useful features.
-  - Time travelling.
-  - Parallel universe management.
-  - Saving cats from a burning building.
-  - Superhero teamup.
-- This is not really an introduction to `git` (sorry!)
+0. Commit cleanliness.
+1. Log, checkout.
+2. Branching, rebasing.
+   - Using a UI to look at branches.
+3. Revert, soft reset, hard reset, force push.
+4. Collaboration, pull requests, bug reports, ettiquette.
+   - Co authoring commits, credit.
+5. Choosing a license.
+   - And other setup related to a new project.
 
 ---
 
-# Time travelling
+# Labouring the superhero and scifi analogy
+
+0. ...
+1. Time travelling.
+2. Alternate universes.
+3. With great power comes great responsibility.
+4. Superhero teamups!
+5. ...
+
+---
+
+<!--
+_footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott Chacon. CC BY-NC-SA 3.0.
+-->
+
+# Staging area, commit
+
+<center>
+
+![h:500](https://git-scm.com/book/en/v2/images/areas.png)
+
+</center>
+
+---
+
+# 1. Time travelling
+
+## (Understanding `git log` and `git checkout`)
 
 ---
 
@@ -88,103 +103,50 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 ---
 
-# Parallel universes
+# 2. Parallel universes
 
----
-
-# Saving cats from burning buildings
-
----
-
-# Superhero teamup
-
----
-
-<!--
-_footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott Chacon. CC BY-NC-SA 3.0.
--->
-
-# "Changes" "Staged" "Committed"
-
-<center>
-
-![h:500](https://git-scm.com/book/en/v2/images/areas.png)
-
-</center>
+## (`git branch`, `git worktree`, and _looking_ at branchs)
 
 ---
 
 ---
 
-<!--
-_footer: Image: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:DC_superhero_emojis.svg) / Di. CC BY-SA 4.0.
--->
+# 3. With great power comes great responsibility
 
-![](assets/superheroes.png)
+## (`git reset`, `git push --force` when and when not to)
 
 ---
 
-# Split bullet slide
+# Force pushes
 
-- (Obviously)
+- Don't fear the force push.
+- But also, don't do it if you don't need to.
+- A rule of thumb: if you're doing it more than once per month you've got a very strange workflow.
 
-<br/>
-<div class="ccolumns">
-<div>
-
-- Bullet to the left
-
-</div>
-<div>
-
-- Bullet to the right
-
-</div>
+![bg right 90%](assets/force-push.svg)
 
 ---
 
-# Code
+A **MUCH BETTER** option
 
-```py
+# `--force-with-lease`
 
-def i_prefer_python() -> None
-    print("Obviously, I use type hints")
-    return
-
-```
-
-```c++
-
-int butWillWriteCppIfNeeded()
-{
-  return 1337;
-}
-
-```
+You almost always should be using that.
 
 ---
 
-# Emoji are cool
-
-- ❤️🎉✅
-
 ---
 
-# Maths
-
-- An example of inline maths $e^{i\pi} = -1$
-- An example of display format maths:
-
-$$
-\widehat{f}(\xi) = \int_{-\infty}^{\infty} f(x)\ e^{-i 2\pi \xi x}\,dx.
-$$
+---
 
 ---
 
 # Conclusions
 
-- One or two clear take-home points.
-- Don't overload your audience.
+- `git` is a really useful tool and you'll probably use it all the time.
+- GitHub is a place where a lot of code is, and yours will go there too.
+- Working together is much more fun.
+- Think about licenses at the beginning.
 
 ---
 
