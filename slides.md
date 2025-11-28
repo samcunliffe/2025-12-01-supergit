@@ -3,7 +3,7 @@ marp: true
 theme: default
 ---
 
-![bg right fit](assets/qr-code.svg)
+![bg right fit](assets/qr-code-slides.svg)
 
 # [scnlf.me/2025-12-01-supergit](https://scnlf.me/2025-12-01-supergit)
 
@@ -54,6 +54,16 @@ footer: `git` superpowers (and licensing). 2025-12-01.
 3. With great power comes great responsibility.
 4. Superhero teamups!
 5. ...
+
+---
+
+Two ice-breaker questions...
+
+![bg right fit](assets/qr-code-menti.svg)
+
+# [menti.com/ alyib1bai6nh](https://www.menti.com/alyib1bai6nh)
+
+# Or code: 1276 2603
 
 ---
 
@@ -587,5 +597,15 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 - GitHub is a place where a lot of code is, and yours will probably go there too.
 - Working together is much more fun.
 - Think about licenses.
+
+---
+
+# Bonus superpowers
+
+## If we have time - otherwise Google them later!
+
+6. Worktrees.
+7. Bisect.
+8. Submodules.
 
 ---
