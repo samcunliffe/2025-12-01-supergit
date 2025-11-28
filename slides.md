@@ -358,7 +358,7 @@ The grand important internet battle:
 * ⚠️
 
   ```
-  git reset --soft HEAD~1
+  git reset --mixed HEAD~1
   git commit --amend -m "A better commit message" 
   git push --force-with-lease
   ```
@@ -507,11 +507,11 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 - If you're working on a project with an industrial partner: check first.
 - (At UCL) Students retain copyright of their work.
 * We tend to work "open by default".
-- More secure?
-- Easier to debug.
-- Easier to collaborate.
-- Easier to cite and get credit.
-
+  - More secure?
+  - Easier to debug.
+  - Easier to collaborate.
+  - Easier to cite and get credit.
+  
 <!-- prettier-ignore-end -->
 
 ---
