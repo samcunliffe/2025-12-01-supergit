@@ -37,7 +37,6 @@ footer: `git` superpowers (and licensing). 2025-12-01.
 4. Collaboration, pull requests, bug reports, ettiquette.
    - Co authoring commits, credit.
 5. Choosing a license.
-   - And other setup related to a new project.
 
 ---
 
@@ -99,9 +98,25 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 
 ---
 
+Good commit messages:
+
+```
+Short descriptive and less than 50 characters
+
+A longer message that explains WHY the change was made in detail. Also
+wrapped at 72 characters. Many editors will do this for you but if not,
+it's worth remembering to do it manually.
+
+Another paragraph is fine if you need it.
+
+Co-authored-by: Matthew Scroggs <mscroggs@no-reply.github.com>
+```
+
+---
+
 # Quick warmup exercise
 
-Which of these commits are "clean"?
+Which of these commits are good?
 
 <center>
 
@@ -263,6 +278,20 @@ You almost always should be using that.
   - **Review it yourself**.
   - (Maybe contentious) Ask `@Copilot` to review it.
   - Then mark it as ready for review and request reviews from humans.
+
+---
+
+# Working together
+
+- Two people together at one keyboard _or_ coding together over a video call.
+- Screen sharing, pair programming tools ([VS code live share](https://visualstudio.microsoft.com/services/live-share/)).
+- Share credit with co-authored commits:
+
+  ```
+  git commit -m "A commit message
+
+  Co-authored-by: Matthew Scroggs <mscroggs@no-reply.github.com>"
+  ```
 
 ---
 
