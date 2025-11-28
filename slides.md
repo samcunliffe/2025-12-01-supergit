@@ -223,9 +223,67 @@ You almost always should be using that.
 
 ---
 
+# 4. Superhero teamups!
+
 ---
 
 ---
+
+# 5. Choosing a license
+
+---
+
+# Open source
+
+<!-- prettier-ignore-start -->
+
+- [Open source initiative defines 10 things that make a project open source](https://opensource.org/osd).
+- If you're writing research code for funded research you may _have_ to open it.
+- If you're working on a project with an industrial partner: check first.
+- (At UCL) Students retain copyright of their work.
+* We tend to work "open by default".
+  - More secure?
+  - Easier to debug.
+  - Easier to collaborate.
+  - Easier to cite and get credit.
+
+<!-- prettier-ignore-end -->
+
+---
+
+# Sam and Matt's advice for choosing a license
+
+## [Browse choosealicense.com](https://choosealicense.com/)
+
+- Think about this at the start of a project.
+- Use an OSI approved license (don't write your own).
+- Go as permissive as you can.
+- Be aware of GPL code and linking against GPL libraries.
+- Follow your community’s normal license if you don’t have some reason to do something else.
+
+---
+
+# The main ones
+
+<center>
+
+|              |                |
+| ------------ | -------------- |
+| [MIT]        | [BSD 3-Clause] |
+| [Apache 2.0] | [GPLv3]        |
+
+</center>
+
+[MIT]: https://choosealicense.com/licenses/mit/
+[BSD 3-Clause]: https://choosealicense.com/licenses/bsd-3-clause
+[Apache 2.0]: https://choosealicense.com/licenses/apache-2.0/
+[GPLv3]: https://choosealicense.com/licenses/gpl-3.0/
+
+---
+
+# Public code but no license?
+
+## [Here's what choosealicense.com says](https://choosealicense.com/no-permission/)
 
 ---
 
@@ -234,17 +292,6 @@ You almost always should be using that.
 - `git` is a really useful tool and you'll probably use it all the time.
 - GitHub is a place where a lot of code is, and yours will go there too.
 - Working together is much more fun.
-- Think about licenses at the beginning.
+- Think about licenses.
 
 ---
-
-# Appendix
-
----
-
-# Further reading
-
-|                                                      |             |
-| ---------------------------------------------------- | ----------- |
-| [Pro Git](https://git-scm.com/book/en/v2)            | Online book |
-| GitHub's [Git Guides](https://github.com/git-guides) | Website     |
