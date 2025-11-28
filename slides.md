@@ -279,9 +279,98 @@ _footer: Image: Neil Shephard. CC BY 4.0.
 
 ---
 
+# Merging
+
+- Merging a branch into `main`:
+
+  ```
+  git checkout main
+  git merge <branch-name>
+  ```
+
+  - All commits from the feature branch are preserved.
+
+- _Squash_ merging a branch into `main`:
+
+  ```
+  git checkout main
+  git merge --squash <branch-name>
+  git commit -m "A single commit message for all changes"
+  ```
+
+  - Combines all changes from the feature branch into a single commit.
+
+---
+
+The grand important internet battle:
+
+# Merge by commit or squash and merge?
+
+<!-- prettier-ignore-start -->
+
+* I'm on team **squash**.
+* Provided everyone's carefull about attribution.
+
+<!-- prettier-ignore-end -->
+
+---
+
 # 3. With great power comes great responsibility
 
 ## (`git reset`, `git push --force` when and when not to)
+
+---
+
+# The safest way to undo things
+
+<!-- prettier-ignore-start -->
+
+* 🟢 Whether or not you've pushed:
+
+  ```
+  git revert <commit-hash>
+  git revert HEAD~1  # This again!
+  ```
+
+  * Makes a **new commit** that undoes the changes.
+
+* If you haven't pushed yet, you can also use `reset`:
+
+  ```
+  git reset --soft <commit-hash>  # keep changes staged
+  git reset --hard <commit-hash>  # discard changes
+  ```
+
+  * Moves the branch pointer to an earlier commit.
+  * Can also use `HEAD~1` etc.
+
+<!-- prettier-ignore-end -->
+
+---
+
+# Force pushes
+
+- Either `rebase`ing or `reset`ting _after_ pushing needs a force push.
+- Force pushes rewrite history.
+
+<!-- prettier-ignore-start -->
+
+* ⚠️
+
+  ```
+  git reset --soft HEAD~1
+  git commit --amend -m "A better commit message" 
+  git push --force-with-lease
+  ```
+
+* ☢️ This can mess up other people's work.
+
+  ```
+  git reset --hard HEAD~1  # obliterate the last commit
+  git push --force
+  ```
+
+<!-- prettier-ignore-end -->
 
 ---
 
@@ -301,9 +390,19 @@ A **MUCH BETTER** option
 
 You almost always should be using that.
 
+<br />
+
+Or:
+
+1. create a new branch for your rewritten history;
+2. rebase the new branch;
+3. and push that instead.
+
 ---
 
 # 4. Superhero teamups!
+
+## Collaboration, pull requests, bug reports, etiquette
 
 ---
 
@@ -316,11 +415,35 @@ You almost always should be using that.
 
   > _we've forked that repo into our org_
 
-- PR: Pull request.
-- MR: Merge request (GitLab).
+- PR: Pull request. MR: Merge request (GitLab).
 - CI: Continuous integration (automated tests that run on each PR).
 
   > _The CI is broken!_ _Please fix the CI for this_
+
+---
+
+# Quick warmup exercise
+
+Mark each of these bug reports out of 5...
+
+<center>
+
+|                |                |
+| -------------- | -------------- |
+| [Bug report 1] | [Bug report 2] |
+| [Bug report 3] | [Bug report 4] |
+
+</center>
+
+[Bug report 1]: https://github.com/matplotlib/napari-matplotlib/issues/142
+[Bug report 2]: https://github.com/matplotlib/napari-matplotlib/issues/140
+[Bug report 3]: https://github.com/FEniCS/basix/issues/685
+[Bug report 4]: https://github.com/UCL/TDMS/issues/129
+
+<!-- prettier-ignore-start -->
+
+* There are lots of nice features in GitHub issues and GitHub projects.
+* No spoilers here: they'll be covered on Friday.
 
 ---
 
@@ -328,6 +451,17 @@ You almost always should be using that.
 
 - Your CDT has a [website](https://ccmi-cdt.org/).
 - The source code that builds the website is in a [Git source code repository](https://github.com/CCMI-CDT/ccmi-cdt.org).
+
+---
+
+1. Fork the repository.
+2. Clone to your computer.
+3. (Optional) Create a branch and switch to it.
+4. Add yourself [like this]()
+5. Commit changes and push to your fork.
+6. Open a pull request.
+7. Review someone else's PR.
+8. Squash merge!
 
 ---
 
@@ -426,7 +560,3 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 - Think about licenses.
 
 ---
-
-```
-
-```
