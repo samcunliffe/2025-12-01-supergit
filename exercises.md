@@ -35,11 +35,14 @@ git merge new-branch
 ```bash
 cd ~/Desktop/
 git clone git@github.com:bast/git-rebase-squash-exercise.git
+# --or-- gh repo clone bast/git-rebase-squash-exercise
+# --or-- git clone https://github.com/bast/git-rebase-squash-exercise.git
 cd git-rebase-squash-exercise/
 git switch haiku
 python main.py
 git log --oneline
 git rebase --interactive HEAD~6
+# now edit!
 ```
 
 ## Extra credit

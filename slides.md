@@ -37,7 +37,7 @@ footer: `git` superpowers (and licensing). 2025-12-01.
 
 0. Commit cleanliness.
 1. Log, checkout.
-2. Branching, rebasing.
+2. Branching, merging, rebasing.
    - Using a UI to look at branches.
 3. Revert, soft reset, hard reset, force push.
 4. Collaboration, pull requests, bug reports, ettiquette.
@@ -214,7 +214,7 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 # 2. Parallel universes
 
-## (`git branch`, `git rebase`, and _looking_ at branches)
+## (`git branch`, `git merge`, `git rebase`, and _looking_ at branches)
 
 ---
 
@@ -269,13 +269,13 @@ _footer: Image: Neil Shephard. CC BY 4.0.
 
 # Exercise: creating a branch and a merge conflict
 
-## [Exercise instructions]()
+## [Exercise instructions](https://github.com/samcunliffe/2025-12-01-supergit/blob/main/exercises.md#exercise-1-branches-and-merge-conflicts)
 
 ---
 
 # Execise (time permitting): rebasing
 
-## [Exercise instructions]()
+## [Exercise instructions](https://github.com/samcunliffe/2025-12-01-supergit/blob/main/exercises.md#exercise-2-rebasing)
 
 ---
 

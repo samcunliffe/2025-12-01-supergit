@@ -15,7 +15,7 @@ Please make sure you've read and checked [the prerequisites](./prerequisites.md)
 These slides borrow some diagrams and some structure from [Pro Git](https://git-scm.com/book/en/v2).
 
 If any of this is useful to you for teaching or learning or anything else, please feel encouraged to use it!
-The material in these slides is licensed under [CC-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The material in these slides is licensed under [CC-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless otherwise specified.
 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" height="31" />
 
