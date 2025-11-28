@@ -422,6 +422,30 @@ Or:
 
 ---
 
+<!--
+_footer: Logos from Wikimedia Commons, Trademarks of respective owners.
+-->
+
+# GitHub
+
+- A website for hosting Git repositories (a "[forge](<https://en.wikipedia.org/wiki/Forge_(software)>)")
+
+  - Very widely used. Lots of nice features.
+  - [@UCL](https://github.com/ucl), [@imperialcollegelondon](https://github.com/imperialcollegelondon) and this [@CCMI-CDT](https://github.com/ccmi-cdt) use it.
+
+- There are other options. Here are some...
+
+<center>
+
+|                                                                                                         |                                                                                                         |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| &nbsp; ![h:60](https://upload.wikimedia.org/wikipedia/commons/c/c8/GitLab_logo_%282%29.svg) &nbsp;      | &nbsp; ![h:70](https://upload.wikimedia.org/wikipedia/commons/7/7e/Codeberg_logo_horizontal.svg) &nbsp; |
+| &nbsp; ![h:70](https://upload.wikimedia.org/wikipedia/commons/c/c4/Gitea_Logo_with_Wordmark.svg) &nbsp; | &nbsp; ![h:45](https://upload.wikimedia.org/wikipedia/commons/c/c5/Bitbucket-Logo-blue.svg) &nbsp;      |
+
+</center>
+
+---
+
 # Quick warm-up exercise
 
 Mark each of these bug reports out of 5...
@@ -505,7 +529,8 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 - [Open source initiative defines 10 things that make a project open source](https://opensource.org/osd).
 - If you're writing research code for funded research you may _have_ to open it.
 - If you're working on a project with an industrial partner: check first.
-- (At UCL) Students retain copyright of their work.
+- As students you normally retain intellectual property of your work
+  (policies: [UCL](https://www.ucl.ac.uk/enterprise/staff/policies-supported-innovation-enterprise/ucl-intellectual-property-ip-policy#3), [Imperial](https://www.imperial.ac.uk/enterprise/students/intellectual-property-for-students/)).
 * We tend to work "open by default".
   - More secure?
   - Easier to debug.
@@ -555,7 +580,7 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 # Conclusions
 
 - `git` is a really useful tool and you'll probably use it all the time.
-- GitHub is a place where a lot of code is, and yours will go there too.
+- GitHub is a place where a lot of code is, and yours will probably go there too.
 - Working together is much more fun.
 - Think about licenses.
 
