@@ -457,7 +457,7 @@ Mark each of these bug reports out of 5...
 1. Fork the repository.
 2. Clone to your computer.
 3. (Optional) Create a branch and switch to it.
-4. Add yourself [like this]()
+4. Add yourself [like this](FIXME_ADD_MATTS_PR_LINK_HERE).
 5. Commit changes and push to your fork.
 6. Open a pull request.
 7. Review someone else's PR.
