@@ -186,7 +186,7 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 # 2. Parallel universes
 
-## (`git branch`, `git worktree`, and _looking_ at branchs)
+## (`git branch`, `git worktree`, and _looking_ at branches)
 
 ---
 
@@ -227,6 +227,43 @@ You almost always should be using that.
 
 ---
 
+# Jargon
+
+- Repo: A Git repository. "GitHub repo" == Git repository on GitHub.
+- Org: GitHub organisation.
+- Fork: A copy of a repository in your own GitHub account or organisation.
+  Also a verb:
+
+  > _we've forked that repo into our org_
+
+- PR: Pull request.
+- MR: Merge request (GitLab).
+- CI: Continuous integration (automated tests that run on each PR).
+
+  > _The CI is broken!_ _Please fix the CI for this_
+
+---
+
+# Activity: add yourself to the CCMI CDT website
+
+- Your CDT has a [website](https://ccmi-cdt.org/).
+- The source code that builds the website is in a [Git source code repository](https://github.com/CCMI-CDT/ccmi-cdt.org).
+
+---
+
+# Sam and Matt's tips for collaborating on GitHub
+
+- Read the CONTRIBUTING guidelines
+  - Or chat with collaborators and agree on some (can change them later).
+- Open draft pull requests early.
+  - If in doubt, get feedback and ask for help.
+- When you're pull request is ready:
+  - Make sure the descriptions are clear and you've linked any issues.
+  - Make sure tests and linters pass.
+  - **Review it yourself**.
+  - (Maybe contentious) Ask `@Copilot` to review it.
+  - Then mark it as ready for review and request reviews from humans.
+
 ---
 
 # 5. Choosing a license
@@ -251,7 +288,7 @@ You almost always should be using that.
 
 ---
 
-# Sam and Matt's advice for choosing a license
+# Sam and Matt's tips for choosing a license
 
 ## [Browse choosealicense.com](https://choosealicense.com/)
 
