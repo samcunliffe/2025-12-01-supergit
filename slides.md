@@ -82,7 +82,7 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 
   ```
   git add a_file another_file  # two files on the stage
-  git commit -m "Fix somthing."
+  git commit -m "Fix somthing."  # typo in commit message
   git add forgot_this_file
   git commit --amend  # add forgotten files or fix typos
   ```
@@ -127,7 +127,7 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>
 
 ---
 
-# Quick warmup exercise
+# Quick warm-up exercise
 
 Which of these commits are good?
 
@@ -273,7 +273,7 @@ _footer: Image: Neil Shephard. CC BY 4.0.
 
 ---
 
-# Execise (time permitting): rebasing
+# Exercise (time permitting): rebasing
 
 ## [Exercise instructions](https://github.com/samcunliffe/2025-12-01-supergit/blob/main/exercises.md#exercise-2-rebasing)
 
@@ -309,7 +309,7 @@ The grand important internet battle:
 <!-- prettier-ignore-start -->
 
 * I'm on team **squash**.
-* Provided everyone's carefull about attribution.
+* Provided everyone's careful about attribution.
 
 <!-- prettier-ignore-end -->
 
@@ -422,7 +422,7 @@ Or:
 
 ---
 
-# Quick warmup exercise
+# Quick warm-up exercise
 
 Mark each of these bug reports out of 5...
 
