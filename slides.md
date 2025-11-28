@@ -214,16 +214,68 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 # 2. Parallel universes
 
-## (`git branch`, `git worktree`, and _looking_ at branches)
+## (`git branch`, `git rebase`, and _looking_ at branches)
 
 ---
 
-```
-git branch
-git checkout -b
-git worktree add
-git log --graph --decorate --oneline
-```
+<!--
+_footer: Image: Neil Shephard. CC BY 4.0.
+-->
+
+![](assets/branches.svg)
+
+---
+
+- List all branches:
+
+  ```
+  git branch
+  ```
+
+- Create a branch without switching to it:
+
+  ```
+  git branch <branch-name>
+  ```
+
+- Create a new branch and switch to it:
+
+  ```
+  git checkout -b <branch-name>
+  git switch --create <branch-name>  # git 2.23+
+  ```
+
+- Switch between branches that already exist:
+
+  ```
+  git checkout <branch-name>  # or switch since git 2.23
+  ```
+
+---
+
+# Demo: visualising branches
+
+<!-- prettier-ignore-start -->
+
+* Make a nice terminal graph:
+
+  ```
+  git log --graph --all --decorate --oneline
+  ```
+
+<!-- prettier-ignore-end -->
+
+---
+
+# Exercise: creating a branch and a merge conflict
+
+## [Exercise instructions]()
+
+---
+
+# Execise (time permitting): rebasing
+
+## [Exercise instructions]()
 
 ---
 
@@ -300,11 +352,13 @@ You almost always should be using that.
 - Screen sharing, pair programming tools ([VS code live share](https://visualstudio.microsoft.com/services/live-share/)).
 - Share credit with co-authored commits:
 
-  ```
-  git commit -m "A commit message
+```
 
-  Co-authored-by: Matthew Scroggs <mscroggs@no-reply.github.com>"
-  ```
+git commit -m "A commit message
+
+Co-authored-by: Matthew Scroggs <mscroggs@no-reply.github.com>"
+
+```
 
 ---
 
@@ -321,10 +375,10 @@ You almost always should be using that.
 - If you're working on a project with an industrial partner: check first.
 - (At UCL) Students retain copyright of their work.
 * We tend to work "open by default".
-  - More secure?
-  - Easier to debug.
-  - Easier to collaborate.
-  - Easier to cite and get credit.
+- More secure?
+- Easier to debug.
+- Easier to collaborate.
+- Easier to cite and get credit.
 
 <!-- prettier-ignore-end -->
 
@@ -374,3 +428,7 @@ You almost always should be using that.
 - Think about licenses.
 
 ---
+
+```
+
+```
