@@ -22,6 +22,12 @@ CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-12-01. ![h:31]
 
 ---
 
+![bg right fit](assets/qr-code.svg)
+
+# [scnlf.me/2025-12-01-supergit](https://scnlf.me/2025-12-01-supergit)
+
+---
+
 <!--
 paginate: true
 footer: `git` superpowers (and licensing). 2025-12-01.
@@ -85,6 +91,7 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 
   ```
   git diff --staged
+  git diff HEAD~1  # What does this do?
   ```
 
 * Bypass the staging area with `-a,--all`.
@@ -98,7 +105,13 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 
 ---
 
-Good commit messages:
+# Good commit messages
+
+```
+Short descriptive and less than 50 characters
+```
+
+<br />
 
 ```
 Short descriptive and less than 50 characters
