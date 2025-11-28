@@ -52,17 +52,70 @@ footer: `git` superpowers (and licensing). 2025-12-01.
 
 ---
 
+# 0. Staging area, and commit cleanliness
+
+---
+
 <!--
-_footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott Chacon. CC BY-NC-SA 3.0.
+_footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott Chacon. CC BY-NC-SA 3.0. | Quote: GitHub Guides. CC-BY 4.0.
 -->
 
-# Staging area, commit
+<!-- prettier-ignore-start -->
+
+* > _Commits should be logical, atomic units of change that represent a specific idea._
+* > _But, not all humans work that way._
+
+<!-- prettier-ignore-end -->
+
+![bg right:60% fit](https://git-scm.com/book/en/v2/images/areas.png)
+
+---
+
+<!-- prettier-ignore-start -->
+
+* Use `--amend` to fix things...
+
+  ```
+  git add a_file another_file  # two files on the stage
+  git commit -m "Fix somthing."
+  git add forgot_this_file
+  git commit --amend  # add forgotten files or fix typos
+  ```
+
+* Use the `--staged` diff to check...
+
+  ```
+  git diff --staged
+  ```
+
+* Bypass the staging area with `-a,--all`.
+  Commits all changes to all tracked files:
+  
+  ```
+  git commit --all -m "I'm very confident"
+  ```
+
+<!-- prettier-ignore-end -->
+
+---
+
+# Quick warmup exercise
+
+Which of these commits are "clean"?
 
 <center>
 
-![h:500](https://git-scm.com/book/en/v2/images/areas.png)
+|                   |                   |
+| ----------------- | ----------------- |
+| [Commit number 1] | [Commit number 2] |
+| [Commit number 3] | [Commit number 4] |
 
 </center>
+
+[Commit number 1]: https://github.com/samcunliffe/basf2-history-fork/commit/16d74d6c5131aa6b59353f3dc93104c9d7bf5195
+[Commit number 2]: https://github.com/belle2/basf2/commit/bad3579e020ed2b516f8625997a46a23de5fe9b5
+[Commit number 3]: https://github.com/matplotlib/napari-matplotlib/commit/669cdc26bb6091f1209242b367820a2a6280233a
+[Commit number 4]: https://github.com/samcunliffe/basf2-history-fork/commit/d8477ae8df7032207178c80a4ea96a017af59175
 
 ---
 
@@ -95,6 +148,34 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 ---
 
+<!-- prettier-ignore-start -->
+
+* [The Git source code repository](https://github.com/git/git)
+
+* Look at the recent history:
+
+  ```
+  git log 
+  git log --oneline
+  ```
+
+* Look at the first commit:
+
+  ```
+  git log --reverse
+  ```
+
+* Actually travel back in time to an old commit:
+
+  ```
+  git checkout <commit-hash>
+  git checkout <branch-name>  # go back to the future
+  ```
+
+<!-- prettier-ignore-end -->
+
+---
+
 <center>
 
 ![h:600](assets/git-in-git.png)
@@ -108,6 +189,13 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 ## (`git branch`, `git worktree`, and _looking_ at branchs)
 
 ---
+
+```
+git branch
+git checkout -b
+git worktree add
+git log --graph --decorate --oneline
+```
 
 ---
 
