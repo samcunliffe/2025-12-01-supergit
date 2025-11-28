@@ -63,7 +63,7 @@ Two ice-breaker questions...
 
 # [menti.com/ alyib1bai6nh](https://www.menti.com/alyib1bai6nh)
 
-# Or code: 1276 2603
+# Or enter code: 1276 2603
 
 ---
 
@@ -495,7 +495,7 @@ Rank each of these bug reports...
 1. Fork the repository.
 2. Clone to your computer.
 3. (Optional) Create a branch and switch to it.
-4. Add yourself [like this](FIXME_ADD_MATTS_PR_LINK_HERE).
+4. Add yourself [like this](https://github.com/CCMI-CDT/ccmi-cdt.org/pull/53/files).
 5. Commit changes and push to your fork.
 6. Open a pull request.
 7. Review someone else's PR.
@@ -597,15 +597,5 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 - GitHub is a place where a lot of code is, and yours will probably go there too.
 - Working together is much more fun.
 - Think about licenses.
-
----
-
-# Bonus superpowers
-
-## If we have time - otherwise Google them later!
-
-6. Worktrees.
-7. Bisect.
-8. Submodules.
 
 ---
