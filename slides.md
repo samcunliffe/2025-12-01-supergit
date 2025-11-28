@@ -33,7 +33,7 @@ paginate: true
 footer: `git` superpowers (and licensing). 2025-12-01.
 -->
 
-# Our plan for this morning
+# Our plan for today
 
 0. Commit cleanliness.
 1. Log, checkout.
