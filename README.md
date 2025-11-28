@@ -12,7 +12,7 @@ Please make sure you've read and checked [the prerequisites](./prerequisites.md)
 
 ## Reuse
 
-These slides borrow some diagrams and some structure from [Pro Git](https://git-scm.com/book/en/v2).
+These slides borrow some content and ideas from [Pro Git], [CodeRefinery], [Git Guides], and UCL's [COMP0233] module.
 
 If any of this is useful to you for teaching or learning or anything else, please feel encouraged to use it!
 The material in these slides is licensed under [CC-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless otherwise specified.
@@ -26,4 +26,7 @@ But we assume you will rebrand for your own organisation and purposes.
 [@mscroggs]: https://github.com/mscroggs
 [@samcunliffe]: https://github.com/samcunlffe
 [Pro Git]: https://git-scm.com/book/en/v2
+[CodeRefinery]: https://coderefinery.org/blog/git-material/
+[Git Guides]: https://github.com/git-guides
+[COMP0233]: https://github.com/UCL-COMP0233-25-26
 [CC-by-nc-sa 4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/
