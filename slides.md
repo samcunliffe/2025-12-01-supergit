@@ -3,6 +3,12 @@ marp: true
 theme: default
 ---
 
+![bg right fit](assets/qr-code.svg)
+
+# [scnlf.me/2025-12-01-supergit](https://scnlf.me/2025-12-01-supergit)
+
+---
+
 ![bg fit](assets/ucl-banner.png)
 
 ![width:7em](assets/ccmi.svg)
@@ -19,12 +25,6 @@ CDT CCMI Software Engineering Fundamentals, 90 High Holborn. 2025-12-01. ![h:31]
 
 [@mscroggs]: https://github.com/mscroggs
 [@samcunliffe]: https://github.com/samcunlffe
-
----
-
-![bg right fit](assets/qr-code.svg)
-
-# [scnlf.me/2025-12-01-supergit](https://scnlf.me/2025-12-01-supergit)
 
 ---
 
