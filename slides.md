@@ -129,9 +129,11 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>
 
 # Quick warm-up exercise
 
-Which of these commits are good?
+Rank these commits on cleanliness:
 
 <center>
+
+## https://www.menti.com/alyib1bai6nh
 
 |                   |                   |
 | ----------------- | ----------------- |
@@ -448,9 +450,11 @@ _footer: Logos from Wikimedia Commons, Trademarks of respective owners.
 
 # Quick warm-up exercise
 
-Mark each of these bug reports out of 5...
+Rank each of these bug reports...
 
 <center>
+
+## https://www.menti.com/alyib1bai6nh
 
 |                |                |
 | -------------- | -------------- |
