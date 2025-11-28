@@ -122,7 +122,7 @@ it's worth remembering to do it manually.
 
 Another paragraph is fine if you need it.
 
-Co-authored-by: Matthew Scroggs <mscroggs@no-reply.github.com>
+Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>
 ```
 
 ---
@@ -353,11 +353,9 @@ You almost always should be using that.
 - Share credit with co-authored commits:
 
 ```
-
 git commit -m "A commit message
 
-Co-authored-by: Matthew Scroggs <mscroggs@no-reply.github.com>"
-
+Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 ```
 
 ---
