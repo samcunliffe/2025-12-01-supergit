@@ -17,7 +17,7 @@ If not, please [install `git`] then spend a bit more time going over the [prereq
 We also assume all students have a [GitHub account] and have browsed around a repository on GitHub before (like this one!)
 
 > [!TIP]
-> If you're creating an account for the first time, we recommend adding your university emai _and_ a personal one. You'll want your GitHub account to outlive your PhD.
+> If you're creating an account for the first time, we recommend adding your university email _and_ a personal one. You'll want your GitHub account to outlive your PhD.
 
 **Optionally**, you can [install the GitHub CLI] you might find it easier to authenticate, and it's pretty useful to have it around when working with GitHub.
 
