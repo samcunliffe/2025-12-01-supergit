@@ -731,3 +731,30 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
   - Bugfixes.
 
 ---
+
+# Contributing guide
+
+---
+
+# CONTRIBUTING.md
+
+- Conventionally SHOUTED at the root of a repository.
+- Explains how to contribute to the project.
+- A good idea to write one _yourselves_ when starting a new collaborative project together.
+- Doesn't need to be long. Just write down what is expected.
+
+---
+
+# Things to think about
+
+- Do you want people to fork and PR, or work in branches in the main repo?
+- Branch naming convention?
+  {`feature/xyz`, `bugfix/abc`, `hotfix/123`} or user prefix {`sc/fix-bug-1337`, `ms/add-feature-42`}.
+- Who merges PRs? (The reviewer? The PR author?)
+- Should you squash merge or not?
+- Code style guidelines? Linters?
+- How do you want bugs to be reported?
+- How do you want features to be requested?
+- Internal vs external collaborators.
+
+---
