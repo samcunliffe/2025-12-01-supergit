@@ -90,7 +90,7 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 
 * Use `--amend` to fix things...
 
-  ```
+  ```sh
   git add a_file another_file  # two files on the stage
   git commit -m "Fix somthing."  # typo in commit message
   git add forgot_this_file
@@ -99,7 +99,7 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 
 * Use the `--staged` diff to check...
 
-  ```
+  ```sh
   git diff --staged
   git diff HEAD~1  # What does this do?
   ```
@@ -107,7 +107,7 @@ _footer: Image: [Pro Git](https://git-scm.com/book/en/v2) / Ben Straub and Scott
 * Bypass the staging area with `-a,--all`.
   Commits all changes to all tracked files:
   
-  ```
+  ```sh
   git commit --all -m "I'm very confident"
   ```
 
@@ -194,20 +194,20 @@ _footer: Image: [Faces Of Open Source](https://www.facesofopensource.com) / Pete
 
 * Look at the recent history:
 
-  ```
+  ```sh
   git log 
   git log --oneline
   ```
 
 * Look at the first commit:
 
-  ```
+  ```sh
   git log --reverse
   ```
 
 * Actually travel back in time to an old commit:
 
-  ```
+  ```sh
   git checkout <commit-hash>
   git checkout <branch-name>  # go back to the future
   ```
@@ -240,26 +240,26 @@ _footer: Image: Neil Shephard. CC BY 4.0.
 
 - List all branches:
 
-  ```
+  ```sh
   git branch
   ```
 
 - Create a branch without switching to it:
 
-  ```
+  ```sh
   git branch <branch-name>
   ```
 
 - Create a new branch and switch to it:
 
-  ```
+  ```sh
   git checkout -b <branch-name>
   git switch --create <branch-name>  # git 2.23+
   ```
 
 - Switch between branches that already exist:
 
-  ```
+  ```sh
   git checkout <branch-name>  # or switch since git 2.23
   ```
 
@@ -271,7 +271,7 @@ _footer: Image: Neil Shephard. CC BY 4.0.
 
 * Make a nice terminal graph:
 
-  ```
+  ```sh
   git log --graph --all --decorate --oneline
   ```
 
@@ -295,7 +295,7 @@ _footer: Image: Neil Shephard. CC BY 4.0.
 
 - Merging a branch into `main`:
 
-  ```
+  ```sh
   git checkout main
   git merge <branch-name>
   ```
@@ -304,7 +304,7 @@ _footer: Image: Neil Shephard. CC BY 4.0.
 
 - _Squash_ merging a branch into `main`:
 
-  ```
+  ```sh
   git checkout main
   git merge --squash <branch-name>
   git commit -m "A single commit message for all changes"
@@ -339,7 +339,7 @@ The grand important internet battle:
 
 * 🟢 Whether or not you've pushed:
 
-  ```
+  ```sh
   git revert <commit-hash>
   git revert HEAD~1  # This again!
   ```
@@ -348,7 +348,7 @@ The grand important internet battle:
 
 * If you haven't pushed yet, you can also use `reset`:
 
-  ```
+  ```sh
   git reset --soft <commit-hash>  # keep changes staged
   git reset --hard <commit-hash>  # discard changes
   ```
@@ -369,7 +369,7 @@ The grand important internet battle:
 
 * ⚠️
 
-  ```
+  ```sh
   git reset --mixed HEAD~1
   git commit --amend -m "A better commit message" 
   git push --force-with-lease
@@ -377,7 +377,7 @@ The grand important internet battle:
 
 * ☢️ This can mess up other people's work.
 
-  ```
+  ```sh
   git reset --hard HEAD~1  # obliterate the last commit
   git push --force
   ```
@@ -524,7 +524,7 @@ Rank each of these bug reports...
 - Screen sharing, pair programming tools ([VS code live share](https://visualstudio.microsoft.com/services/live-share/)).
 - Share credit with co-authored commits:
 
-```
+```sh
 git commit -m "A commit message
 
 Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
@@ -597,5 +597,137 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 - GitHub is a place where a lot of code is, and yours will probably go there too.
 - Working together is much more fun.
 - Think about licenses.
+
+---
+
+# Extras
+
+---
+
+# Git worktree
+
+---
+
+- Branching is great.
+- Working on something, get a critical bug report
+  (or your supervisor turns up and asks for something specific).
+- What do you do?
+
+---
+
+<!-- prettier-ignore-start -->
+
+* Commit your (messy) changes, or stash them, switch branches...
+
+  ```sh
+  git commit -m "WIP: messy changes"
+  git push  # push to a remote
+  git switch --create supervisor-request-branch
+  # do some work
+  ```
+
+* When you've finished...
+
+  ```sh
+  git commit -m "Do supervisor request"
+  git push
+  git switch what-i-was-doing-before
+  git reseet --soft HEAD~1 # get back to messy changes
+  # ...
+  ```
+
+---
+
+* Then they come back with some PR review comments or (worse) in person to sit over your shoulder...
+
+  ```sh
+  git commit -m "WIP: messy changes" # again
+  git push # probably doesn't work because we pushed and reset before
+  git push --force-with-lease
+  git switch supervisor-request-branch
+  ```
+
+<!-- prettier-ignore-end -->
+
+---
+
+# `git wortree` makes this less painful
+
+- Been around in `git` for a while.
+- Not really used much.
+- Multiple checkouts from the same repository.
+  - Like having multiple clones but easier to create and thoow away.
+- Let's replay the supervisor example...
+
+---
+
+<!-- prettier-ignore-start -->
+
+- Supervisor turns up...
+
+  ```sh
+  git worktree add ../supervisor-request-branch
+  cd ../supervisor-request-branch
+  # do some work
+  ```
+
+- When you've finished...
+
+  ```sh
+  git commit -m "Do supervisor request"
+  git push
+  cd ../original-repository
+  # back where you were before
+  ```
+
+---
+
+- Then they come back with more requests...
+
+  ```sh
+  cd ../supervisor-request-branch
+  ```
+
+---
+
+# Some `worktree` tips
+
+- Conventions
+
+  ```sh
+  git worktree add ../<something>
+  ```
+
+  vs
+
+  ```sh
+  mkdir .worktrees
+  git worktree add .worktrees/<something>
+  ```
+
+- By default the last thing in the path is a branch name (it will create it if it doesn't exist).
+- To checkout a specific branch with a different `worktree` directory name:
+
+  ```sh
+  git worktree add ../i-prefer-to-name-directories [-b] <branch-name>
+  ```
+
+---
+
+- List them:
+
+  ```sh
+  git worktree list
+  ```
+
+- Remove them:
+
+  ```sh
+  git worktree remove ../supervisor-request-branch
+  ```
+
+- Nice to quickly make a `worktree`, leave it for a while, then remove it when done.
+  - Reviewing PRs (and you want a checkout to test something).
+  - Bugfixes.
 
 ---
