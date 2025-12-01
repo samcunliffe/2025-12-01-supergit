@@ -492,14 +492,13 @@ Rank each of these bug reports...
 
 ---
 
-1. Fork the repository.
-2. Clone to your computer.
-3. (Optional) Create a branch and switch to it.
-4. Add yourself [like this](https://github.com/CCMI-CDT/ccmi-cdt.org/pull/53/files).
-5. Commit changes and push to your fork.
-6. Open a pull request.
-7. Review someone else's PR.
-8. Squash merge!
+1. Clone to your computer.
+2. (Optional) Create a branch and switch to it.
+3. Add yourself [like this](https://github.com/CCMI-CDT/ccmi-cdt.org/pull/53/files).
+4. Commit changes and push to your fork.
+5. Open a pull request.
+6. Review someone else's PR.
+7. Squash merge!
 
 ---
 
