@@ -57,7 +57,7 @@ footer: `git` superpowers (and licensing). 2025-12-01.
 
 ---
 
-Two ice-breaker questions...
+A few ice-breaker questions...
 
 ![bg right fit](assets/qr-code-menti.svg)
 
