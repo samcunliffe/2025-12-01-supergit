@@ -651,12 +651,12 @@ Co-authored-by: Matthew Scroggs <mscroggs@users.no-reply.github.com>"
 
 ---
 
-# `git wortree` makes this less painful
+# `git worktree` makes this less painful
 
 - Been around in `git` for a while.
 - Not really used much.
 - Multiple checkouts from the same repository.
-  - Like having multiple clones but easier to create and thoow away.
+  - Like having multiple clones but easier to create and throw away.
 - Let's replay the supervisor example...
 
 ---
